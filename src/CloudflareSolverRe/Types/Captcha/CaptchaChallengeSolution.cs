@@ -34,6 +34,7 @@ namespace CloudflareSolverRe.Types.Captcha
         {
             ClearancePage = $"{challenge.SiteUrl.Scheme}://{challenge.SiteUrl.Host}{challenge.Action}";
             R = challenge.R;
+            Id = string.Empty;
             RecaptchaResponse = recaptchaResponse;
         }
 
